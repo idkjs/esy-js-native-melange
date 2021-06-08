@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@opam/bucklescript": "*",
+    "@opam/ocamlfind": "1.8.1"
+  },
+  "resolutions": {
+    "@opam/bucklescript": "melange-re/melange#51ea4de",
+    "ocaml": "melange-re/ocaml#75f22c8"
+  },
+  "esy": {
+    "buildsInSource": "unsafe"
+  },
+  "installConfig": {
+    "pnp": false
+  }
+}
