@@ -1,14 +1,14 @@
 {
   "dependencies": {
-    "@opam/bucklescript": "*",
-    "@opam/ocamlfind": "1.8.1"
+    "@opam/ocamlfind": "1.8.1",
+    "ocaml": "4.12.x",
+    "melange": "melange-re/melange",
+    "@opam/ocaml-lsp-server": "*"
   },
-  "resolutions": {
-    "@opam/bucklescript": "melange-re/melange#51ea4de",
-    "ocaml": "melange-re/ocaml#75f22c8"
-  },
+
   "esy": {
-    "buildsInSource": "unsafe"
+    "buildsInSource": "unsafe",
+    "build": [ "ln -sfn #{melange.install} node_modules/bs-platform" ]
   },
   "installConfig": {
     "pnp": false
